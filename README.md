@@ -85,4 +85,4 @@ This project is licensed under the Apache License Version 2.0 - see the [LICENSE
 ## Acknowledgments
 
 The current work was both supported by the Unique Interministerial Fund (FUI) No. 17 as 
-part of the ODISAE http://www.odisae.com project and the ANR 2016 PASTEL http://www.agence-nationale-recherche.fr/?Projet=ANR-16-CE33-0007.
+part of the **ODISAE** http://www.odisae.com project and the ANR 2016 **PASTEL** http://www.agence-nationale-recherche.fr/?Projet=ANR-16-CE33-0007.

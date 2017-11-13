@@ -7,11 +7,14 @@ The paper can be found [here](http://lml.bas.bg/ranlp2017/RANLP2017_proceedings_
 
 When citing MappSent in academic papers and theses, please use the following BibTeX entry:
 ```
-@inproceedings{hazem2017,
+@inproceedings{MappSent,
     author  = {Amir Hazem and Basma el amel Boussaha and  Nicolas Hernandez},
     title   = {MappSent: a Textual Mapping Approach for Question-to-Question Similarity},
     year    = "2017",
-   publisher = {Recent Advances in Natural Language Processing, {RANLP} 2017, 2-8 September, 2017, Varna, Bulgaria}
+    month = {September},
+      day = {2-8},
+    address = {Varna, Bulgaria},
+   publisher = {Recent Advances in Natural Language Processing, {RANLP}}
   }
 ```
 ## Getting Started

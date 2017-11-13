@@ -17,6 +17,9 @@ When citing MappSent in academic papers and theses, please use the following Bib
    publisher = {Recent Advances in Natural Language Processing, {RANLP}}
   }
 ```
+
+## Features
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.

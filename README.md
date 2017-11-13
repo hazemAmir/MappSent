@@ -87,6 +87,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+The current work was both supported by the Unique Interministerial Fund (FUI) No. 17 as 
+part of the ODISAE\footnote{\url{http://www.odisae.com}} project and the ANR 2016 PASTEL\footnote{\url{http://www.agence-nationale-recherche.fr/?Projet=ANR-16-CE33-0007}}.

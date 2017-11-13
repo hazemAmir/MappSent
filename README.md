@@ -74,18 +74,15 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Amir HAZEM** - *Initial work* 
-* **Basma El Amal Boussaha **
+* **Amir HAZEM** 
+* **Basma El Amal Boussaha**
 * **Nicolas Hernandez**
-
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the Apache License Version 2.0 - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
 The current work was both supported by the Unique Interministerial Fund (FUI) No. 17 as 
-part of the ODISAE\footnote{\url{http://www.odisae.com}} project and the ANR 2016 PASTEL\footnote{\url{http://www.agence-nationale-recherche.fr/?Projet=ANR-16-CE33-0007}}.
+part of the ODISAE \url{http://www.odisae.com} project and the ANR 2016 PASTEL \url{http://www.agence-nationale-recherche.fr/?Projet=ANR-16-CE33-0007}.

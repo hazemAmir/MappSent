@@ -3,7 +3,17 @@
 
 We introduce **MappSent**, a novel approach for textual similarity. Based on a linear sentence embedding representation, its principle is to build a matrix that __maps sentences in a joint-subspace__ where similar sets of sentences are pushed closer. We evaluate our approach on  the SemEval 2016/2017 question-to-question similarity task and show that overall MappSent  achieves competitive results and outperforms in most cases state-of-art methods.
 
+The paper can be found [here]
 
+When citing MappSent in academic papers and theses, please use the following BibTeX entry:
+```
+@inproceedings{hazem2017,
+    author  = {Amir Hazem and Basma el amel Boussaha and  Nicolas Hernandez},
+    title   = {MappSent: a Textual Mapping Approach for Question-to-Question Similarity},
+    year    = "2017",
+   publisher = {Recent Advances in Natural Language Processing, {RANLP} 2017, 2-8 September, 2017, Varna, Bulgaria}
+  }
+```
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.

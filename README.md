@@ -29,7 +29,7 @@ When citing **MappSent** in academic papers and theses, please use the following
 - The mapping matrix is built by learning a linear transformation which minimizes the sum of squared Euclidean distances for the dictionary entries and using an orthogonality constraint to preserve the length normalization.
 - While in the bilingual scenario, source words are projected in the target space by using the bilingual mapping matrix (**VecMap**), in our case, original and related questions are both projected in a similar subspace using the monolingual sentence mapping matrix. This consists of our adaptation of the bilingual mapping.  
 - Test sentences are projected in the new subspace thanks to the mapping matrix.
-- The cosine similarity is used to measure the similarity between the projected test sentences.
+- The Cosine similarity is used to measure the similarity between the projected test sentences.
 
 ## Requirements
 
@@ -40,9 +40,10 @@ When citing **MappSent** in academic papers and theses, please use the following
 - SciPy
 
 ### Installing
+This software depends on NumPy and Scipy, two Python packages for scientific computing. You must have them installed prior to installing MappSent. It also uses **Gensim** and **VecMap** two softwares thare are provided with MappSent so no need to install them.
 
 ```
-coming soon
+
 ```
 
 ## Authors

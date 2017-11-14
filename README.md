@@ -19,6 +19,7 @@ When citing MappSent in academic papers and theses, please use the following Bib
 ```
 
 ## Features
+- We train a Skip-Gram model using **Gensim** toolkit **rehurek** on a lemmatized training dataset (Qatar Living). 
 
 ## Getting Started
 

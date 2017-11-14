@@ -50,8 +50,23 @@ This software depends on NumPy and Scipy, two Python packages for scientific com
 Using MappSent involves the following steps: 
 
 ```
-Build sentence embeddings of the training dataset
+0- Build word embeddings with Gensim
+python gensim.py
+
+1- Build sentence embeddings of the training dataset
 python build_train_sent_vect.py
+
+2- Build sentence embeddings of the test dataset
+python build_test_sent_vect.py
+
+3- Build the sentence mapping matrix
+./run_mapping.sh
+
+4- Compute cosine similarity of the test set
+
+python run_SemEval_SubtaskB.py
+
+5- 
 ```
 
 

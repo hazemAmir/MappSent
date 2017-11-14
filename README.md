@@ -53,7 +53,7 @@ Using MappSent involves the following steps:
 
 ## Authors
 
-* **Amir HAZEM** 
+* **Amir Hazem** 
 * **Basma El Amal Boussaha**
 * **Nicolas Hernandez**
 

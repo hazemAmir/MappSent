@@ -23,12 +23,16 @@ When citing MappSent in academic papers and theses, please use the following Bib
 - We use all the questions and answers provided by the **Qatar Living** forum as training data. 
 - Each training and test sentence is pre-processed. We apply lemmatization, stopwords and POSTAGS filtering (only keep nouns, verbs and adjectives) while computing sentence embedding vectors and the mapping matrix (This step is not applied when learning word embeddings).
 - Each pre-processed sentence is represented by the element-wise addition of its words embedding vectors.
-- A mapping matrix is built by adapting [Vecmap](https://github.com/artetxem/vecmap) approach in a monolingual scenario.
+- A mapping matrix is built by adapting [VecMap](https://github.com/artetxem/vecmap) approach in a monolingual scenario.
 
 ## Requirements
 
 - **Gensim** toolkit [Radim Rehurek](https://github.com/RaRe-Technologies/gensim).
-- **[Vecmap** toolkit [Mikel Artetxe](https://github.com/artetxem/vecmap).
+- **VecMap** toolkit [Mikel Artetxe](https://github.com/artetxem/vecmap).
+- Python 2.7 for **MappSent** and python 3 for **VecMap**
+- NumPy
+- SciPy
+
 
 ### Prerequisites
 

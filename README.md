@@ -22,7 +22,9 @@ When citing MappSent in academic papers and theses, please use the following Bib
 - For context word representation, we train a Skip-Gram model using **Gensim** toolkit released by [Radim Rehurek](https://github.com/RaRe-Technologies/gensim). 
 - We use all the questions and answers provided by the **Qatar Living** forum as training data. 
 - Each training and test sentence is pre-processed. We apply lemmatization, stopwords and POSTAGS filtering (only keep nouns, verbs and adjectives) while computing sentence embedding vectors and the mapping matrix (This step is not applied when learning word embeddings).
-  
+- Each pre-processed sentence is represented by the element-wise addition of its words embedding vectors.
+- A mapping matrix is built by adapting (Vecmap) [https://github.com/artetxem/vecmap] approach in a monolingual scenario.
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.

@@ -54,7 +54,9 @@ Using MappSent involves the following steps:
 To reproduce the results reported in our [paper](http://lml.bas.bg/ranlp2017/RANLP2017_proceedings_draft_6.09.2017.pdf), please follow the following steps:   
 
 ```
-* git clone https://github.com/hazemAmir/MappSent.git
+1. git clone https://github.com/hazemAmir/MappSent.git
+2. ./MappSent.sh
+3.
 ```
 
 ## Authors

@@ -45,6 +45,11 @@ This software depends on NumPy and Scipy, two Python packages for scientific com
 ```
 
 ```
+## Usage
+
+Using MappSent involves the following steps: 
+
+
 
 ## Authors
 

@@ -29,7 +29,7 @@ When citing MappSent in academic papers and theses, please use the following Bib
 
 - **Gensim** toolkit [Radim Rehurek](https://github.com/RaRe-Technologies/gensim).
 - **VecMap** toolkit [Mikel Artetxe](https://github.com/artetxem/vecmap).
-- Python 2.7 for **MappSent** and python 3 for **VecMap**
+- Python 2.7 for **MappSent** and Python 3 for **VecMap**
 - NumPy
 - SciPy
 

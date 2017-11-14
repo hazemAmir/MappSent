@@ -5,7 +5,7 @@ We introduce **MappSent**, a novel approach for textual similarity. Based on a l
 
 The paper can be found [here](http://lml.bas.bg/ranlp2017/RANLP2017_proceedings_draft_6.09.2017.pdf)
 
-When citing MappSent in academic papers and theses, please use the following BibTeX entry:
+When citing **MappSent** in academic papers and theses, please use the following BibTeX entry:
 ```
 @inproceedings{MappSent,
     author  = {Amir Hazem and Basma el amel Boussaha and  Nicolas Hernandez},

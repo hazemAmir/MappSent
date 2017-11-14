@@ -41,8 +41,6 @@ When citing **MappSent** in academic papers and theses, please use the following
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
 ```
 coming soon
 ```

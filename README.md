@@ -20,7 +20,10 @@ When citing MappSent in academic papers and theses, please use the following Bib
 
 ## Features
 - We train a Skip-Gram model using **Gensim** toolkit **rehurek** on a lemmatized training dataset (Qatar Living). 
-
+- We use all the questions and answers provided by the **Qatar Living** forum as training data. 
+- Each training and test sentence is pre-processed by removing stopwords and only keep nouns, verbs and adjectives while 
+  computing sentence embedding vectors and the mapping matrix (This step is not applied when learning word embeddings).
+  
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.

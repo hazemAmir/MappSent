@@ -39,7 +39,7 @@ When citing **MappSent** in academic papers and theses, please use the following
 - NumPy
 - SciPy
 
-### Installing
+## Installing
 This software depends on NumPy and Scipy, two Python packages for scientific computing. You must have them installed prior to installing MappSent. It also uses **Gensim** and **VecMap** two softwares thare are provided with MappSent so no need to install them.
 
 ```

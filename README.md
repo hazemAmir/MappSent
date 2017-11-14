@@ -1,4 +1,4 @@
-# MappSent:    
+# MappSent    
 ## a Textual Mapping Approach for Question-to-Question Similarity    
 
 We introduce **MappSent**, a novel approach for textual similarity. Based on a linear sentence embedding representation, its principle is to build a matrix that __maps sentences in a joint-subspace__ where similar sets of sentences are pushed closer. We evaluate our approach on  the SemEval 2016/2017 question-to-question similarity task and show that overall MappSent  achieves competitive results and outperforms in most cases state-of-art methods.
@@ -23,7 +23,7 @@ When citing MappSent in academic papers and theses, please use the following Bib
 - We use all the questions and answers provided by the **Qatar Living** forum as training data. 
 - Each training and test sentence is pre-processed. We apply lemmatization, stopwords and POSTAGS filtering (only keep nouns, verbs and adjectives) while computing sentence embedding vectors and the mapping matrix (This step is not applied when learning word embeddings).
 - Each pre-processed sentence is represented by the element-wise addition of its words embedding vectors.
-- A mapping matrix is built by adapting (Vecmap) [https://github.com/artetxem/vecmap] approach in a monolingual scenario.
+- A mapping matrix is built by adapting [Vecmap] (https://github.com/artetxem/vecmap) approach in a monolingual scenario.
 
 ## Getting Started
 

@@ -21,10 +21,11 @@ When citing **MappSent** in academic papers and theses, please use the following
 ## Features
 - For context word representation, we train a Skip-Gram model using **Gensim** toolkit released by [Radim Rehurek](https://github.com/RaRe-Technologies/gensim). 
 - We use all the questions and answers provided by the **Qatar Living** forum as training data. 
-- Each training and test sentence is pre-processed. We apply lemmatization, stopwords and POSTAGS filtering (we only keep nouns, verbs and adjectives) while computing sentence embedding vectors and the mapping matrix (This step is not applied when learning word embeddings).
+- Each training and test sentence is pre-processed. We apply lemmatization, stopwords and POSTAGS filtering (We only keep nouns, verbs and adjectives) while computing sentence embedding vectors and the mapping matrix (This step is not applied when learning word embeddings).
 - Each pre-processed sentence is represented by the element-wise addition of its words embedding vectors.
 - A mapping matrix is built by adapting [VecMap](https://github.com/artetxem/vecmap) approach in a monolingual scenario.
-- To build the mapping matrix we need a mapping dictionary which contains similar sentence pairs. To construct this dictionary, - - we consider pairs of sentences that are labeled as _PerfectMatch_ and _Relevant_ in the Qatar Living training dataset
+- To build the mapping matrix we need a mapping dictionary which contains similar sentence pairs. 
+- To construct this dictionary, we consider pairs of sentences that are labeled as _PerfectMatch_ and _Relevant_ in the Qatar Living training dataset
 - The mapping matrix is built by learning a linear transformation which minimizes the sum of squared Euclidean distances for the dictionary entries and using an orthogonality constraint to preserve the length normalization.
 - While in the bilingual scenario, source words are projected in the target space by using the bilingual mapping matrix (**VecMap**), in our case, original and related questions are both projected in a similar subspace using the monolingual sentence mapping matrix. This consists of our adaptation of the bilingual mapping.  
 - Test sentences are projected in the new subspace thanks to the mapping matrix.

@@ -25,9 +25,10 @@ When citing MappSent in academic papers and theses, please use the following Bib
 - Each pre-processed sentence is represented by the element-wise addition of its words embedding vectors.
 - A mapping matrix is built by adapting [Vecmap](https://github.com/artetxem/vecmap) approach in a monolingual scenario.
 
-## Getting Started
+## Requirements
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+- **Gensim** toolkit [Radim Rehurek](https://github.com/RaRe-Technologies/gensim).
+- **[Vecmap** toolkit [Mikel Artetxe](https://github.com/artetxem/vecmap).
 
 ### Prerequisites
 

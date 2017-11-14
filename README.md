@@ -33,25 +33,9 @@ When citing MappSent in academic papers and theses, please use the following Bib
 - NumPy
 - SciPy
 
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-coming soon
-```
-
 ### Installing
 
 A step by step series of examples that tell you have to get a development env running
-
-```
-coming soon
-```
-
-## Deployment
-
 
 ```
 coming soon

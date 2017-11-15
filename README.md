@@ -84,7 +84,7 @@ Using MappSent involves the following steps:
 
 ## Quick start (Reproducing Results)
 
-To reproduce the results reported in our [paper](http://lml.bas.bg/ranlp2017/RANLP2017_proceedings_draft_6.09.2017.pdf), please run the following script the:   
+To reproduce the results reported in our [paper](http://lml.bas.bg/ranlp2017/RANLP2017_proceedings_draft_6.09.2017.pdf), please run the following script:   
 
 ```
 1. ./MappSent.sh

@@ -42,7 +42,7 @@ When citing **MappSent** in academic papers and theses, please use the following
 ## Installing
 This software depends on NumPy and Scipy, two Python packages for scientific computing. You must have them installed prior to installing MappSent. It also uses [Gensim](https://github.com/RaRe-Technologies/gensim) and [VecMap](https://github.com/artetxem/vecmap). **VecMap** is already provided with **MappSent**, so there is no need to install it. 
 
-# Install MappSent   
+To install **MappSent** please type: 
 
 ```
 git clone https://github.com/hazemAmir/MappSent.git

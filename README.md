@@ -51,23 +51,29 @@ Using MappSent involves the following steps:
 
 ```
 0- Build word embeddings with Gensim
-python gensim.py
+
+    python gensim.py
 
 1- Build sentence embeddings of the training dataset
-python build_train_sent_vect.py
+
+    python build_train_sent_vect.py
 
 2- Build sentence embeddings of the test dataset
-python build_test_sent_vect.py
+
+    python build_test_sent_vect.py
 
 3- Build the sentence mapping matrix
-./run_mapping.sh
+
+    ./run_mapping.sh
 
 4- Compute cosine similarity of the test set
 
-python run_SemEval_SubtaskB.py
+    python run_SemEval_SubtaskB.py
 
 5- Compute MAP score via SEMEVAL scorer
-python eval/scorer_v2.3/MAP_scripts/ev.py eval/scorer_v2.3/SemEval2016-Task3-CQA-QL-test.xml.subtaskB.relevancy  mappsent_subtaskB.pred 
+
+    python eval/scorer_v2.3/MAP_scripts/ev.py eval/scorer_v2.3/SemEval2016-Task3-CQA-QL-test.xml.subtaskB.relevancy    
+    mappsent_subtaskB.pred 
 ```
 
 

@@ -40,7 +40,7 @@ When citing **MappSent** in academic papers and theses, please use the following
 - SciPy
 
 ## Installing
-This software depends on NumPy and Scipy, two Python packages for scientific computing. You must have them installed prior to installing MappSent. It also uses **Gensim** and **VecMap** two softwares thare are provided with MappSent so no need to install them.
+This software depends on NumPy and Scipy, two Python packages for scientific computing. You must have them installed prior to installing MappSent. It also uses [Gensim](https://github.com/RaRe-Technologies/gensim) and [VecMap](https://github.com/artetxem/vecmap). **VecMap** is already provided with MappSent so there is non need to install it. 
 
 ```
 
@@ -50,17 +50,20 @@ This software depends on NumPy and Scipy, two Python packages for scientific com
 Using MappSent involves the following steps: 
 
 ```
-0- Build word embeddings with Gensim
+0- Build word embeddings with Gensim 
 
-    python gensim.py
+    python gensim_w2v.py sg 100 5
+    
+    In this example, the script (gensim_w2v.py) will provide Skipgram (sg) word embedding model of 100 dimensions and a window 
+    size of 5.  
 
 1- Build sentence embeddings of the training dataset
 
-    python build_train_sent_vect.py
+    python build_train_sent_vect.py sg 100 5 0
 
 2- Build sentence embeddings of the test dataset
 
-    python build_test_sent_vect.py
+    python build_test_sent_vect.py sg 100 5 0
 
 3- Build the sentence mapping matrix
 
@@ -68,12 +71,11 @@ Using MappSent involves the following steps:
 
 4- Compute cosine similarity of the test set
 
-    python run_SemEval_SubtaskB.py
+    python run_mapped_sentence_similarity_subtaskB.py
 
 5- Compute MAP score via SEMEVAL scorer
 
-    python eval/scorer_v2.3/MAP_scripts/ev.py eval/scorer_v2.3/SemEval2016-Task3-CQA-QL-test.xml.subtaskB.relevancy    
-    mappsent_subtaskB.pred 
+    python eval/scorer_v2.3/MAP_scripts/ev.py eval/scorer_v2.3/SemEval2016-Task3-CQA-QL-test.xml.subtaskB.relevancy                 mappsent_subtaskB.pred
 ```
 
 
@@ -85,7 +87,6 @@ To reproduce the results reported in our [paper](http://lml.bas.bg/ranlp2017/RAN
 ```
 1. git clone https://github.com/hazemAmir/MappSent.git
 2. ./MappSent.sh
-3.
 ```
 
 ## Authors

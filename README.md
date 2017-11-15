@@ -14,7 +14,7 @@ When citing **MappSent** in academic papers and theses, please use the following
     month = {September},
       day = {2-8},
     address = {Varna, Bulgaria},
-   publisher = {Recent Advances in Natural Language Processing, {RANLP}}
+   publisher = {Recent Advances in Natural Language Processing (RANLP)}
   }
 ```
 

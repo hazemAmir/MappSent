@@ -66,7 +66,8 @@ python build_test_sent_vect.py
 
 python run_SemEval_SubtaskB.py
 
-5- 
+5- Compute MAP score via SEMEVAL scorer
+python eval/scorer_v2.3/MAP_scripts/ev.py eval/scorer_v2.3/SemEval2016-Task3-CQA-QL-test.xml.subtaskB.relevancy  mappsent_subtaskB.pred 
 ```
 
 

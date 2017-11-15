@@ -84,11 +84,43 @@ Using MappSent involves the following steps:
 
 ## Quick start (Reproducing Results)
 
-To reproduce the results reported in our [paper](http://lml.bas.bg/ranlp2017/RANLP2017_proceedings_draft_6.09.2017.pdf), please follow the following steps:   
+To reproduce the results reported in our [paper](http://lml.bas.bg/ranlp2017/RANLP2017_proceedings_draft_6.09.2017.pdf), please run the following script the:   
 
 ```
-1. git clone https://github.com/hazemAmir/MappSent.git
-2. ./MappSent.sh
+1. ./MappSent.sh
+
+```
+
+You will otain the following results provided by the official SemEval scorer:
+
+```
+********************************
+*** Detailed ranking results ***
+********************************
+
+IR  -- Score for the output of the IR system (baseline).
+SYS -- Score for the output of the tested system.
+
+           IR   SYS
+MAP   : 0.7475 0.7847
+AvgRec: 0.8830 0.9046
+MRR   :  83.79  87.32
+              IR    SYS              IR    SYS              IR    SYS            IR  SYS
+REC-1@01:  81.43  87.14  ACC@01:  81.43  87.14  AC1@01:   0.92   0.98  AC2@01:   57   61
+REC-1@02:  84.29  87.14  ACC@02:  62.86  68.57  AC1@02:   0.80   0.87  AC2@02:   88   96
+REC-1@03:  84.29  87.14  ACC@03:  54.29  56.67  AC1@03:   0.79   0.82  AC2@03:  114  119
+REC-1@04:  85.71  87.14  ACC@04:  49.64  51.43  AC1@04:   0.80   0.83  AC2@04:  139  144
+REC-1@05:  88.57  87.14  ACC@05:  46.57  46.29  AC1@05:   0.85   0.84  AC2@05:  163  162
+REC-1@06:  88.57  87.14  ACC@06:  43.10  42.62  AC1@06:   0.88   0.87  AC2@06:  181  179
+REC-1@07:  88.57  87.14  ACC@07:  40.20  39.80  AC1@07:   0.91   0.90  AC2@07:  197  195
+REC-1@08:  88.57  88.57  ACC@08:  37.14  37.68  AC1@08:   0.92   0.94  AC2@08:  208  211
+REC-1@09:  88.57  88.57  ACC@09:  34.92  35.87  AC1@09:   0.96   0.98  AC2@09:  220  226
+REC-1@10:  88.57  88.57  ACC@10:  33.29  33.29  AC1@10:   1.00   1.00  AC2@10:  233  233
+
+REC-1 - percentage of questions with at least 1 correct answer in the top @X positions (useful for tasks where questions have at most one correct answer)
+ACC   - accuracy, i.e., number of correct answers retrieved at rank @X normalized by the rank and the total number of questions
+AC1   - the number of correct answers at @X normalized by the number of maximum possible answers (perfect re-ranker)
+AC2   - the absolute number of correct answers at @X
 ```
 
 ## Authors

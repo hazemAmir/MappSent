@@ -89,9 +89,11 @@ To reproduce the results reported in our [paper](http://lml.bas.bg/ranlp2017/RAN
 ```
 1. ./MappSent.sh
 
+The default parameters are a skipgram model of 100 dimensions and a window size of 5 words.
+
 ```
 
-You will otain the following results provided by the official SemEval scorer:
+You will otain the following results of SemEval 2016 dataset provided by the official SemEval scorer:
 
 ```
 ********************************

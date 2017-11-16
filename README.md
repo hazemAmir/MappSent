@@ -54,18 +54,19 @@ Using MappSent involves the following steps:
 ```
 0- Build word embeddings with Gensim 
 
-    python gensim_w2v.py sg 100 5
+    python gensim_w2v.py sg 100 5 
     
     In this example, the script (gensim_w2v.py) will provide Skipgram (sg) word embedding model of 100 dimensions and a window 
     size of 5.  
 
 1- Build sentence embeddings of the training dataset
 
-    python build_train_sent_vect.py sg 100 5 0
+    python build_train_sent_vect.py sg 100 5 0 2016 test
+    here, we compute the sentence embeddings of the 2016 training set. We also specify the parameter "test" to initialize the header of the test set by the size of the test set needed in the header file of VecMap  
 
 2- Build sentence embeddings of the test dataset
 
-    python build_test_sent_vect.py sg 100 5 0
+    python build_test_sent_vect.py sg 100 5 0 2016 test
 
 3- Build the sentence mapping matrix
 
@@ -73,7 +74,7 @@ Using MappSent involves the following steps:
 
 4- Compute cosine similarity of the test set
 
-    python run_mapped_sentence_similarity_subtaskB.py
+    python run_mapped_sentence_similarity_subtaskB.py 2016 test
 
 5- Compute MAP score via SEMEVAL scorer
 
@@ -87,9 +88,9 @@ Using MappSent involves the following steps:
 To reproduce the results reported in our [paper](http://lml.bas.bg/ranlp2017/RANLP2017_proceedings_draft_6.09.2017.pdf), please run the following script:   
 
 ```
-1. ./MappSent.sh
+1. ./MappSent.sh 100 5 0 2016 test
 
-The default parameters are a skipgram model of 100 dimensions and a window size of 5 words.
+The default parameters are a skipgram model of 100 dimensions, a window size of 5 words, a minimum token length of 1, Semeval 2016 and the experiments are conducted on the test set.
 
 ```
 
@@ -124,6 +125,9 @@ ACC   - accuracy, i.e., number of correct answers retrieved at rank @X normalize
 AC1   - the number of correct answers at @X normalized by the number of maximum possible answers (perfect re-ranker)
 AC2   - the absolute number of correct answers at @X
 ```
+
+To obtain for instance the results on the 2017 test set type:  ./MappSent.sh 100 5 0 2017 test
+
 
 ## Authors
 

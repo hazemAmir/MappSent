@@ -62,23 +62,33 @@ Using MappSent involves the following steps:
 1- Build sentence embeddings of the training dataset
 
     python build_train_sent_vect.py sg 100 5 0 2016 test
-    here, we compute the sentence embeddings of the 2016 training set. We also specify the parameter "test" to initialize the header of the test set by the size of the test set needed in the header file of VecMap  
-
+    
+    here, we compute the sentence embeddings of the 2016 training set. 
+    We also specify the parameter "test" to initialize a header file needed to compute the mapping matrix 
+    
 2- Build sentence embeddings of the test dataset
 
     python build_test_sent_vect.py sg 100 5 0 2016 test
-
+    
+    here, we compute the sentence embeddings of the 2016 test set. 
+    
 3- Build the sentence mapping matrix
 
     ./run_mapping.sh
 
+    Here we run **VecMap** to produce the mapping matrix
+
 4- Compute cosine similarity of the test set
 
     python run_mapped_sentence_similarity_subtaskB.py 2016 test
+    
+    Here we compute the cosine similarity on the 2016 test set
 
 5- Compute MAP score via SEMEVAL scorer
 
     python eval/scorer_v2.3/MAP_scripts/ev.py eval/scorer_v2.3/SemEval2016-Task3-CQA-QL-test.xml.subtaskB.relevancy                 mappsent_subtaskB.pred
+    
+    
 ```
 
 
@@ -87,10 +97,17 @@ Using MappSent involves the following steps:
 
 To reproduce the results reported in our [paper](http://lml.bas.bg/ranlp2017/RANLP2017_proceedings_draft_6.09.2017.pdf), please run the following script:   
 
+# Results of the 2016 SemEval edition
 ```
 1. ./MappSent.sh 100 5 0 2016 test
 
-The default parameters are a skipgram model of 100 dimensions, a window size of 5 words, a minimum token length of 1, Semeval 2016 and the experiments are conducted on the test set.
+The default parameters are:
+
+sg   a skipgram model of 100 dimensions
+5    a window size of 5 words. 
+0   a minimum token length of 1. 
+2016   Semeval 2016 edition. 
+test   the experiments are conducted on the test set.
 
 ```
 
@@ -125,8 +142,50 @@ ACC   - accuracy, i.e., number of correct answers retrieved at rank @X normalize
 AC1   - the number of correct answers at @X normalized by the number of maximum possible answers (perfect re-ranker)
 AC2   - the absolute number of correct answers at @X
 ```
+# Results of the 2017 SemEval edition
+```
+1. ./MappSent.sh 100 5 2 2017 test
 
-To obtain for instance the results on the 2017 test set type:  ./MappSent.sh 100 5 0 2017 test
+The default parameters are:
+
+sg   a skipgram model of 100 dimensions
+5    a window size of 5 words. 
+2   a minimum token length of 3. 
+2017   Semeval 2017 edition. 
+test   the experiments are conducted on the test set.
+
+```
+You will otain the following results of SemEval 2017 dataset provided by the official SemEval scorer:
+
+```
+********************************
+*** Detailed ranking results ***
+********************************
+
+IR  -- Score for the output of the IR system (baseline).
+SYS -- Score for the output of the tested system.
+
+           IR   SYS
+MAP   : 0.4185 0.4662
+AvgRec: 0.7759 0.8192
+MRR   :  46.42  51.35
+              IR    SYS              IR    SYS              IR    SYS            IR  SYS
+REC-1@01:  36.36  44.32  ACC@01:  36.36  44.32  AC1@01:   0.54   0.66  AC2@01:   32   39
+REC-1@02:  47.73  51.14  ACC@02:  31.25  34.66  AC1@02:   0.57   0.63  AC2@02:   55   61
+REC-1@03:  55.68  55.68  ACC@03:  29.55  32.20  AC1@03:   0.64   0.70  AC2@03:   78   85
+REC-1@04:  56.82  59.09  ACC@04:  27.56  29.26  AC1@04:   0.69   0.74  AC2@04:   97  103
+REC-1@05:  56.82  60.23  ACC@05:  25.00  26.36  AC1@05:   0.73   0.77  AC2@05:  110  116
+REC-1@06:  61.36  64.77  ACC@06:  24.05  25.38  AC1@06:   0.82   0.86  AC2@06:  127  134
+REC-1@07:  62.50  64.77  ACC@07:  22.89  23.38  AC1@07:   0.88   0.90  AC2@07:  141  144
+REC-1@08:  64.77  65.91  ACC@08:  21.45  21.88  AC1@08:   0.93   0.95  AC2@08:  151  154
+REC-1@09:  65.91  67.05  ACC@09:  19.57  20.20  AC1@09:   0.95   0.98  AC2@09:  155  160
+REC-1@10:  67.05  67.05  ACC@10:  18.52  18.52  AC1@10:   1.00   1.00  AC2@10:  163  163
+
+REC-1 - percentage of questions with at least 1 correct answer in the top @X positions (useful for tasks where questions have at most one correct answer)
+ACC   - accuracy, i.e., number of correct answers retrieved at rank @X normalized by the rank and the total number of questions
+AC1   - the number of correct answers at @X normalized by the number of maximum possible answers (perfect re-ranker)
+AC2   - the absolute number of correct answers at @X
+```
 
 
 ## Authors

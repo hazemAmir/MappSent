@@ -95,9 +95,9 @@ Using MappSent involves the following steps:
 
 ## Quick start (Reproducing Results)
 
-To reproduce the results reported in our [paper](http://lml.bas.bg/ranlp2017/RANLP2017_proceedings_draft_6.09.2017.pdf), please run the following script:   
+To reproduce the results reported in our [paper](http://lml.bas.bg/ranlp2017/RANLP2017_proceedings_draft_6.09.2017.pdf), please follow the steps hereafter:   
 
-# Results of the 2016 SemEval edition
+### Results of the 2016 SemEval edition
 ```
 1. ./MappSent.sh 100 5 0 2016 test
 
@@ -142,7 +142,7 @@ ACC   - accuracy, i.e., number of correct answers retrieved at rank @X normalize
 AC1   - the number of correct answers at @X normalized by the number of maximum possible answers (perfect re-ranker)
 AC2   - the absolute number of correct answers at @X
 ```
-# Results of the 2017 SemEval edition
+### Results of the 2017 SemEval edition
 ```
 1. ./MappSent.sh 100 5 2 2017 test
 
@@ -187,6 +187,10 @@ AC1   - the number of correct answers at @X normalized by the number of maximum 
 AC2   - the absolute number of correct answers at @X
 ```
 
+To obtain other results, you can vary: 
+- the dimension size (100, 300, 500 and 800)
+- the window size (5, 10, 20)
+- the token size (0 for 2016 and 2 for 2016)
 
 ## Authors
 

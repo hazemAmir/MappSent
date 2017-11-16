@@ -64,7 +64,7 @@ Using MappSent involves the following steps:
     python build_train_sent_vect.py sg 100 5 0 2016 test
     
     here, we compute the sentence embeddings of the 2016 training set. 
-    We also specify the parameter "test" to initialize a header file needed to compute the mapping matrix 
+    We also specify the parameter "test" to initialize a header file needed to compute the mapping matrix. 
     
 2- Build sentence embeddings of the test dataset
 
@@ -76,17 +76,19 @@ Using MappSent involves the following steps:
 
     ./run_mapping.sh
 
-    Here we run **VecMap** to produce the mapping matrix
+    Here we run VecMap to produce the mapping matrix.
 
 4- Compute cosine similarity of the test set
 
     python run_mapped_sentence_similarity_subtaskB.py 2016 test
     
-    Here we compute the cosine similarity on the 2016 test set
+    Here we compute the cosine similarity on the 2016 test set.
 
 5- Compute MAP score via SEMEVAL scorer
 
     python eval/scorer_v2.3/MAP_scripts/ev.py eval/scorer_v2.3/SemEval2016-Task3-CQA-QL-test.xml.subtaskB.relevancy                 mappsent_subtaskB.pred
+    
+    Here we evaluate MappSent on the 2016 SemEval test set.
     
     
 ```
@@ -103,11 +105,11 @@ To reproduce the results reported in our [paper](http://lml.bas.bg/ranlp2017/RAN
 
 The default parameters are:
 
-- sg     a skipgram model of 100 dimensions
-- 5      a window size of 5 words. 
-- 0      a minimum token length of 1. 
-- 2016   Semeval 2016 edition. 
-- test   the experiments are conducted on the test set.
+- sg    : a skipgram model of 100 dimensions
+- 5     : a window size of 5 words. 
+- 0     : a minimum token length of 1. 
+- 2016  : Semeval 2016 edition. 
+- test  : the experiments are conducted on the test set.
 
 ```
 
@@ -148,11 +150,11 @@ AC2   - the absolute number of correct answers at @X
 
 The default parameters are:
 
-- sg     a skipgram model of 100 dimensions
-- 5      a window size of 5 words. 
-- 2      a minimum token length of 3. 
-- 2017   Semeval 2017 edition. 
-- test   the experiments are conducted on the test set.
+- sg    : a skipgram model of 100 dimensions
+- 5     : a window size of 5 words. 
+- 2     : a minimum token length of 3. 
+- 2017  : Semeval 2017 edition. 
+- test  : the experiments are conducted on the test set.
 
 ```
 You will otain the following results of SemEval 2017 dataset provided by the official SemEval scorer:

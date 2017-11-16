@@ -103,11 +103,11 @@ To reproduce the results reported in our [paper](http://lml.bas.bg/ranlp2017/RAN
 
 The default parameters are:
 
--sg:     a skipgram model of 100 dimensions
--5:      a window size of 5 words. 
--0:      a minimum token length of 1. 
--2016:   Semeval 2016 edition. 
--test:   the experiments are conducted on the test set.
+- sg     a skipgram model of 100 dimensions
+- 5      a window size of 5 words. 
+- 0      a minimum token length of 1. 
+- 2016   Semeval 2016 edition. 
+- test   the experiments are conducted on the test set.
 
 ```
 
@@ -148,11 +148,11 @@ AC2   - the absolute number of correct answers at @X
 
 The default parameters are:
 
--sg     a skipgram model of 100 dimensions
--5      a window size of 5 words. 
--2      a minimum token length of 3. 
--2017   Semeval 2017 edition. 
--test   the experiments are conducted on the test set.
+- sg     a skipgram model of 100 dimensions
+- 5      a window size of 5 words. 
+- 2      a minimum token length of 3. 
+- 2017   Semeval 2017 edition. 
+- test   the experiments are conducted on the test set.
 
 ```
 You will otain the following results of SemEval 2017 dataset provided by the official SemEval scorer:

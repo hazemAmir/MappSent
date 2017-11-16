@@ -103,11 +103,11 @@ To reproduce the results reported in our [paper](http://lml.bas.bg/ranlp2017/RAN
 
 The default parameters are:
 
-sg   a skipgram model of 100 dimensions
-5    a window size of 5 words. 
-0   a minimum token length of 1. 
-2016   Semeval 2016 edition. 
-test   the experiments are conducted on the test set.
+sg:  a skipgram model of 100 dimensions
+5:   a window size of 5 words. 
+0:   a minimum token length of 1. 
+2016:    Semeval 2016 edition. 
+test:    the experiments are conducted on the test set.
 
 ```
 
@@ -190,7 +190,7 @@ AC2   - the absolute number of correct answers at @X
 To obtain other results, you can vary: 
 - the dimension size (100, 300, 500 and 800)
 - the window size (5, 10, 20)
-- the token size (0 for 2016 and 2 for 2016)
+- the token size (0 for 2016 and 2 for 2017)
 
 ## Authors
 

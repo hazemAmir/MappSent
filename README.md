@@ -97,6 +97,8 @@ Using MappSent involves the following steps:
 
 ## Quick start (Reproducing Results)
 
+Due to data size limitations, please download the training data file [train](http://filex.univ-nantes.fr/get?k=pBalrVY6dAzAZlbK1rF) and copy it in this directory: **./MappSent/data/train/lempostag/**  
+
 To reproduce the results reported in our [paper](http://lml.bas.bg/ranlp2017/RANLP2017_proceedings_draft_6.09.2017.pdf), please follow the steps hereafter:   
 
 ### Results of the 2016 SemEval edition
